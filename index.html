@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 2 - Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Memory Game</h1>
+    
+    <div class="game-container">
+        <div class="game-board" id="game-board">
+            <!-- Cards will be generated with JavaScript -->
+        </div>
+    </div>
+    
+    <div class="game-info">
+        <p>Matched pairs: <span id="matched-count">0</span>/8</p>
+    </div>
+    <div class="instructions">
+        <h2>How to Play:</h2>
+        <ul>
+            <li>Click on any card to flip it over and see the letter.</li>
+            <li>Try to find another card with the same letter.</li>
+            <li>If the two cards match, they stay face up.</li>
+            <li>If they don't match, they will flip back after 1 second.</li>
+            <li>You win when all pairs are matched.</li>
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

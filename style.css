@@ -1,0 +1,66 @@
+/* CSS for the Memory Game */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    /* border: thin solid black; */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    max-width: 450px;
+    /* border: thin solid black; */
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    /* color: white; */
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: rotateY(180deg);
+    
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.flipped {
+    transform: rotateY(360deg);
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+}
+
+.card.matched {
+    background-color: green;
+    transform: rotateY(360deg);
+}
+
+.game-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
